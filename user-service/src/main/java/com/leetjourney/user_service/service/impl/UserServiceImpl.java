@@ -1,10 +1,10 @@
-package com.leetjourney.userservice.service.impl;
+package com.leetjourney.user_service.service.impl;
 
-import com.leetjourney.userservice.dto.UserDto;
-import com.leetjourney.userservice.entity.User;
-import com.leetjourney.userservice.mapper.UserMapper;
-import com.leetjourney.userservice.repository.UserRepository;
-import com.leetjourney.userservice.service.UserService;
+import com.leetjourney.user_service.dto.UserDto;
+import com.leetjourney.user_service.entity.User;
+import com.leetjourney.user_service.mapper.UserMapper;
+import com.leetjourney.user_service.repository.UserRepository;
+import com.leetjourney.user_service.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

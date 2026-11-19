@@ -1,4 +1,4 @@
-package com.leetjourney.userservice.entity;
+package com.leetjourney.user_service.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

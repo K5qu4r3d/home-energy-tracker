@@ -1,4 +1,4 @@
-package com.leetjourney.userservice.dto;
+package com.leetjourney.user_service.dto;
 
 import lombok.Builder;
 

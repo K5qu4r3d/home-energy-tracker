@@ -1,6 +1,6 @@
-package com.leetjourney.userservice.service;
+package com.leetjourney.user_service.service;
 
-import com.leetjourney.userservice.dto.UserDto;
+import com.leetjourney.user_service.dto.UserDto;
 
 public interface UserService {
     UserDto createUser(UserDto userDto);

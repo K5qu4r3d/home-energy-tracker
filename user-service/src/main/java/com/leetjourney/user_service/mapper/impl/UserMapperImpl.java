@@ -1,8 +1,8 @@
-package com.leetjourney.userservice.mapper.impl;
+package com.leetjourney.user_service.mapper.impl;
 
-import com.leetjourney.userservice.dto.UserDto;
-import com.leetjourney.userservice.entity.User;
-import com.leetjourney.userservice.mapper.UserMapper;
+import com.leetjourney.user_service.dto.UserDto;
+import com.leetjourney.user_service.entity.User;
+import com.leetjourney.user_service.mapper.UserMapper;
 import org.springframework.stereotype.Component;
 
 @Component
