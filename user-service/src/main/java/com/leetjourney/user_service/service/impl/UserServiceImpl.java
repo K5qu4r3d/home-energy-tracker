@@ -21,8 +21,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto createUser(UserDto userDto) {
-        log.info("Creating user {}", userDto);
-
         final User createdUser = User.builder()
                 .name(userDto.name())
                 .surname(userDto.surname())
@@ -38,8 +36,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto getUser(Long id) {
-        log.info("Getting user {}", id);
-
         return userRepository.findById(id)
                 .map(userMapper::toDto)
                 .orElse(null);
@@ -47,8 +43,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(Long id, UserDto userDto) {
-        log.info("Updating user {}", id);
-
         // Retrieve user from repository
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
@@ -67,8 +61,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteUser(Long id) {
-        log.info("Deleting user {}", id);
-
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
 
