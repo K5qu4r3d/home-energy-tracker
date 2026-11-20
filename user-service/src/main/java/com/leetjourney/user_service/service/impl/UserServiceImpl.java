@@ -2,6 +2,7 @@ package com.leetjourney.user_service.service.impl;
 
 import com.leetjourney.user_service.dto.UserDto;
 import com.leetjourney.user_service.entity.User;
+import com.leetjourney.user_service.exception.UserNotFoundException;
 import com.leetjourney.user_service.mapper.UserMapper;
 import com.leetjourney.user_service.repository.UserRepository;
 import com.leetjourney.user_service.service.UserService;
@@ -45,7 +46,7 @@ public class UserServiceImpl implements UserService {
     public void updateUser(Long id, UserDto userDto) {
         // Retrieve user from repository
         User user = userRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
 
         // Update with new information
         user.setName(userDto.name());
@@ -62,7 +63,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(Long id) {
         User user = userRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
 
         userRepository.delete(user);
     }
