@@ -6,8 +6,8 @@ import java.time.Instant;
 
 public record EnergyUsageDto(
         Long deviceId,
-        Double energyConsumes,
+        Double energyConsumed,
 
-        @JsonFormat(shape =  JsonFormat.Shape.STRING)
+        @JsonFormat(shape = JsonFormat.Shape.STRING)
         Instant timestamp
 ) {}
