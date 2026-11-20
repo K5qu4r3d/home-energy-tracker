@@ -28,3 +28,4 @@ replay_pid*
 .env
 user-service/.mvn/
 device-service/.mvn/
+ingestion-service/.mvn/
