@@ -27,3 +27,4 @@ replay_pid*
 .idea/
 .env
 user-service/.mvn/
+device-service/.mvn/
