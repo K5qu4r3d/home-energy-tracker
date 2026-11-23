@@ -26,6 +26,3 @@ replay_pid*
 # Project-specific exclusions
 .idea/
 .env
-user-service/.mvn/
-device-service/.mvn/
-ingestion-service/.mvn/
