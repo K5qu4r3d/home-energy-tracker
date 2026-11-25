@@ -4,4 +4,5 @@ import com.leetjourney.kafka.event.EnergyUsageEvent;
 
 public interface UsageService {
     void energyUsageEvent(EnergyUsageEvent event);
+    void aggregateDeviceEnergyUsage();
 }
